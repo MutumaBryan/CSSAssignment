@@ -1,0 +1,109 @@
+body {
+  font-family: "Lato";
+  background-color: #3d3d3d;
+}
+
+.title-card {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 0 0.5em;
+  background: #ffffff;
+  border-bottom: 8px solid #999999;
+}
+
+.title-card-header {
+  grid-column: 1/ span 2;
+  padding: 0 0.2em;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.title-card-body {
+  grid-column: 1/span 2;
+  padding: 0 0.2em;
+}
+
+.title-card-body-p1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.title-card-body-p1 span {
+  color: green;
+  font-weight: bold;
+}
+
+.title-card-body-p2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+
+@media (min-width: 1025px) {
+  .title-card-header {
+    grid-column: 2/ span 2;
+  }
+
+  .title-card-body {
+    grid-column: 2/span 2;
+  }
+
+  .main-card{
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 70%;
+    margin-left: 17%;
+    margin-top: 5% !important;
+  }
+
+  .main-card-header{
+    grid-column: 1/ span 2;
+    width: 70%;
+    margin-left: -1%;
+  }
+
+  .main-card-body {
+    grid-column: 1/ span 2;
+  }
+}
+
+.main-card {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: #ffffff;
+  margin-top: 10%;
+  border-bottom: 8px solid #999999;
+}
+
+.main-card-header {
+  grid-column: 1;
+  padding: 0 0.5em;
+  margin-top: 0.5em;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000;
+  background: #FFBF00;
+  border-bottom: 8px solid #CC9900;
+}
+
+.main-card-body {
+  grid-column: 1;
+  padding: 0 0.5em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 150%;
+  color: #000000;
+}
